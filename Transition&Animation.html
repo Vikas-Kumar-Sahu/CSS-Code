@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        .animated-button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease-in-out;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .animated-button:hover {
+            background-color: #2980b9;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+    <title>Transition and Animation Example</title>
+</head>
+<body>
+    <button class="animated-button">Hover me</button>
+</body>
+</html>
+<!--
+    In this example:
+
+The button has a background color transition defined by transition: background-color 0.3s ease-in-out;. This means that the background color will smoothly change over a duration of 0.3 seconds with an ease-in-out timing function.
+On hover, the background color of the button changes, creating a smooth transition effect.
+The button also has a fade-in animation defined by animation: fadeIn 1s ease-in-out;. The fadeIn animation gradually increases the opacity from 0 to 1 over a duration of 1 second with an ease-in-out timing function.
+Feel free to experiment with the values and add more elements or animations based on your design preferences.
+-->

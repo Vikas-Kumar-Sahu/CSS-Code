@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Define CSS variables */
+        :root {
+            --main-color: #3498db;
+            --font-size: 16px;
+            --border-radius: 5px;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            font-size: var(--font-size);
+            background-color: var(--main-color);
+            color: white;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: var(--main-color);
+        }
+
+        .box {
+            background-color: white;
+            border: 1px solid var(--main-color);
+            border-radius: var(--border-radius);
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+    <title>CSS Variables Example</title>
+</head>
+<body>
+    <h1>Main Heading</h1>
+    <div class="box">This is a box with custom properties.</div>
+</body>
+</html>
+<!--
+    CSS variables are declared within the :root selector, making them globally available.
+--main-color, --font-size, and --border-radius are used as variables for the main color, font size, and border radius, respectively.
+The var() function is used to reference the values of the variables wherever needed.
+By using CSS variables, you can easily update multiple properties at once by changing the variable values in one place (e.g., in the :root selector). This promotes code reusability and maintainability in your stylesheets.
+-->

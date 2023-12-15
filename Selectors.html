@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors Example</title>
+    <style>
+        /* Type Selector */
+        p {
+            color: blue;
+        }
+
+        /* Class Selector */
+        .highlight {
+            background-color: yellow;
+        }
+
+        /* ID Selector */
+        #header {
+            font-size: 24px;
+        }
+
+        /* Attribute Selector */
+        input[type="text"] {
+            border: 1px solid #ccc;
+        }
+
+        /* Universal Selector */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Descendant Selector */
+        div p {
+            font-weight: bold;
+        }
+
+        /* Adjacent Sibling Selector */
+        h2 + p {
+            margin-top: 0;
+        }
+
+        /* Descendant Combinator (Whitespace) */
+        ul li {
+            list-style-type: square;
+        }
+
+        /* Child Combinator (> symbol) */
+        div > p {
+            font-style: italic;
+        }
+
+        /* Adjacent Sibling Combinator (+ symbol) */
+        h2 + p {
+            margin-top: 0;
+        }
+
+        /* General Sibling Combinator (~ symbol) */
+        h2 ~ p {
+            font-style: italic;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="highlight">
+        <h2 id="header">Selector Examples</h2>
+        <p>This is a paragraph with a type selector.</p>
+        <p class="highlight">This paragraph has a class selector.</p>
+        <input type="text" placeholder="Attribute selector applied to input">
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+        </ul>
+        <p>This paragraph is a descendant of a div.</p>
+        <p>This paragraph is an adjacent sibling of an h2.</p>
+        <p>Adjacent sibling combinator applied to this paragraph.</p>
+    </div>
+
+</body>
+</html>
+<!--
+    In this example, various CSS selectors, including type selectors, class selectors, ID selectors, attribute selectors, universal selectors, descendant selectors, adjacent sibling selectors, and combinators, are used to apply different styles to HTML elements. Customize the content and styles based on your specific needs.
+-->

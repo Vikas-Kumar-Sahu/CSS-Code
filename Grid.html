@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* Two columns with equal width */
+            gap: 20px; /* Gap between grid items */
+            padding: 20px;
+        }
+
+        .grid-item {
+            border: 1px solid #ddd;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+    <title>Grid Example</title>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item">Content in Column 1</div>
+        <div class="grid-item">Content in Column 2</div>
+    </div>
+</body>
+</html>
+<!--
+    In this version, the CSS styles are embedded directly within the <style> tag in the HTML <head>. This is a common practice for small projects or examples. For larger projects, it's often recommended to keep the CSS in a separate external stylesheet file, as shown in the previous example.
+-->

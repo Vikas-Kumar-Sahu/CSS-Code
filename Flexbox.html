@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Example</title>
+    <style>
+        /* Flexbox Container Styles */
+        .flex-container {
+            display: flex;
+            justify-content: space-between; /* Distribute items along the main axis with space between them */
+            align-items: center; /* Align items along the cross axis at the center */
+            height: 200px; /* Set a fixed height for demonstration purposes */
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+
+        /* Flexbox Item Styles */
+        .flex-item {
+            width: 100px;
+            height: 100px;
+            background-color: #3498db;
+            color: #ffffff;
+            text-align: center;
+            line-height: 100px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="flex-container">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+    </div>
+
+</body>
+</html>
+<!--
+    In this example:
+
+The .flex-container class represents a flex container. It uses display: flex; to enable the Flexbox layout.
+justify-content: space-between; aligns the items along the main axis with space distributed between them.
+align-items: center; aligns the items along the cross axis at the center.
+The .flex-item class represents flex items within the container. They have a fixed width and height with some styling.
+This simple Flexbox layout places three items horizontally with equal spacing between them. You can customize the dimensions, alignment, and other properties based on your specific layout requirements. Flexbox is powerful for building flexible and responsive layouts with ease.
+-->

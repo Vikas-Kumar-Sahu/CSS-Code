@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Universal selector */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Type selector */
+        h1 {
+            color: #333;
+        }
+
+        /* Class selector */
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        /* Descendant combinator */
+        article p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        /* Child combinator */
+        ul > li {
+            list-style-type: square;
+        }
+
+        /* Attribute selector */
+        input[type="text"] {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        /* Adjacent sibling combinator */
+        h2 + p {
+            font-style: italic;
+        }
+
+        /* Pseudo-class selector */
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Pseudo-element selector */
+        p::first-line {
+            font-weight: bold;
+        }
+    </style>
+    <title>Selectors and Combinators Example</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Main Heading</h1>
+        <article>
+            <p>This is a paragraph inside an article.</p>
+            <ul>
+                <li>List item 1</li>
+                <li>List item 2</li>
+                <li>List item 3</li>
+            </ul>
+        </article>
+        <input type="text" placeholder="Type here">
+        <h2>Subheading</h2>
+        <p>This is a paragraph following the subheading.</p>
+        <a href="#">Hover me</a>
+    </div>
+</body>
+</html>
+<!--
+    In this example:
+
+Universal selector (*) applies a common box-sizing reset to all elements.
+Type selector (h1) styles the main heading.
+Class selector (.container) applies styles to an element with the class "container."
+Descendant combinator (article p) selects <p> elements that are descendants of <article> elements.
+Child combinator (ul > li) selects <li> elements that are direct children of <ul> elements.
+Attribute selector (input[type="text"]) selects <input> elements with the attribute type="text".
+Adjacent sibling combinator (h2 + p) selects <p> elements that are immediately preceded by an <h2> element.
+Pseudo-class selector (a:hover) styles the link when hovered.
+Pseudo-element selector (p::first-line) styles the first line of each <p> element.
+Feel free to modify and experiment with these selectors and combinators to better understand how they work.
+-->

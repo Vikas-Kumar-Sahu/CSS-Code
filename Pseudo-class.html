@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Link pseudo-classes */
+        a:link {
+            color: blue; /* Unvisited link */
+        }
+
+        a:visited {
+            color: purple; /* Visited link */
+        }
+
+        a:hover {
+            color: red; /* Mouse over link */
+        }
+
+        a:active {
+            color: green; /* Active link (when clicked) */
+        }
+
+        /* Form-related pseudo-classes */
+        input:focus {
+            border: 2px solid #007bff; /* Input in focus */
+        }
+
+        /* Child-related pseudo-classes */
+        ul li:first-child {
+            font-weight: bold; /* First list item in a ul */
+        }
+
+        ul li:last-child {
+            font-style: italic; /* Last list item in a ul */
+        }
+
+        /* nth-child pseudo-class */
+        p:nth-child(odd) {
+            background-color: #f2f2f2; /* Style odd paragraphs */
+        }
+
+        p:nth-child(even) {
+            background-color: #ddd; /* Style even paragraphs */
+        }
+    </style>
+    <title>Pseudo-class Example</title>
+</head>
+<body>
+    <a href="#">Normal Link</a>
+    <a href="#" visited>Visited Link</a>
+    <br><br>
+    <input type="text" placeholder="Type something">
+    <br><br>
+    <ul>
+        <li>First Item</li>
+        <li>Second Item</li>
+        <li>Third Item</li>
+    </ul>
+    <p>Paragraph 1</p>
+    <p>Paragraph 2</p>
+    <p>Paragraph 3</p>
+</body>
+</html>
+<!--
+    Link pseudo-classes (:link, :visited, :hover, :active) are used to style links based on their states.
+Form-related pseudo-classes (:focus) style an input when it is in focus.
+Child-related pseudo-classes (:first-child, :last-child) style the first and last list items.
+:nth-child(odd) and :nth-child(even) pseudo-classes are used to style odd and even paragraphs.
+Feel free to modify and experiment with these pseudo-classes to see how they affect the styling of different elements based on their states or positions in the document.
+-->

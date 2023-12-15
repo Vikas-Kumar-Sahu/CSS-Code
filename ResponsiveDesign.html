@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr; /* Single column by default */
+            gap: 20px; /* Gap between grid items */
+            padding: 20px;
+        }
+
+        .grid-item {
+            border: 1px solid #ddd;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Media query for screens 600 pixels and above */
+        @media only screen and (min-width: 600px) {
+            .grid-container {
+                grid-template-columns: 1fr 1fr; /* Two columns for larger screens */
+            }
+        }
+    </style>
+    <title>Responsive Design Example</title>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item">Content in Column 1</div>
+        <div class="grid-item">Content in Column 2</div>
+    </div>
+</body>
+</html>
+<!--
+    In this example:
+
+The default layout is a single column for smaller screens.
+A media query is used to change the layout to two columns when the screen width is 600 pixels or more (@media only screen and (min-width: 600px)).
+You can customize the breakpoints and styles within the media queries based on your specific design requirements.
+This is a basic example, and in a real-world scenario, you would likely have more complex styles and possibly use frameworks like Bootstrap or Flexbox for more sophisticated responsive design.
+-->

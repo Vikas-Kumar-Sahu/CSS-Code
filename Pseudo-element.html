@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Pseudo-element ::before example */
+        h1::before {
+            content: "🌟 "; /* Content to be inserted before h1 */
+            color: #ffcc00; /* Color of the inserted content */
+        }
+
+        /* Pseudo-element ::after example */
+        p::after {
+            content: " (Read more...)"; /* Content to be inserted after each paragraph */
+            color: #3498db; /* Color of the inserted content */
+            font-style: italic;
+        }
+
+        /* Styling the last letter of a paragraph */
+        p::last-letter {
+            color: #e74c3c; /* Color of the last letter */
+            font-weight: bold;
+        }
+    </style>
+    <title>Pseudo-element Example</title>
+</head>
+<body>
+    <h1>Main Heading</h1>
+    <p>This is a simple paragraph with some content. This paragraph will have additional content after it.</p>
+</body>
+</html>
+<!--
+    The h1::before pseudo-element inserts a star emoji before the content of the h1 element.
+The p::after pseudo-element inserts the text "(Read more...)" after each p element.
+The p::last-letter pseudo-element styles the last letter of each paragraph with a different color and bold font-weight.
+Feel free to modify and experiment with these pseudo-elements to see how they can be used to enhance the styling of specific parts of your HTML elements.
+-->
